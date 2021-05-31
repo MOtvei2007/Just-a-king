@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/kazna" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="31dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:rotation="270"
+            android:rotationY="0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/_11168" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:rotation="270" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/_1111" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:rotation="270" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/levelText"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="Текст уровня"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="182dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#494646"
+            android:layout_margin="10dp"
+            android:text="Помиловать" />
+
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:backgroundTint="#494646"
+            android:text="Казнить" />
+    </LinearLayout>
+
+</LinearLayout>
